@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local runtimes and model caches
+.torch/
+.cache/
+
+# Datasets and downloaded external repositories
+external/
+data/
+
+# Generated outputs
+outputs/
+*.onnx
+*.pt
+*.pth
+*.joblib
+
+# Heavy experiment artifacts
+experiments/**/events/
+experiments/**/masks/
+experiments/**/source/
+experiments/**/checkpoints*/
+experiments/**/manifest.csv
+experiments/**/splits/
+experiments/**/splits_binary/
+experiments/**/*.h5
+experiments/**/*.png
+
+# Keep curated docs/assets available for README rendering
+!docs/assets/*.png
+
+# Archives and partial downloads
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.tgz

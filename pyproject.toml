@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "event-defect"
+version = "0.1.0"
+description = "Event-camera and APS-assisted industrial defect detection experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "h5py",
+    "Pillow",
+    "torch",
+    "torchvision",
+    "scikit-learn",
+    "joblib",
+]
+
+[tool.setuptools.packages.find]
+include = ["event_defect*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
